@@ -346,7 +346,7 @@ img{
     justify-content: center;
     align-items: center;
 }
-.links .ikons{
+.links .ikons1{
     display: inline-flex;
     width: 44px;
     height: 44px;
@@ -357,12 +357,12 @@ img{
 .command-ikons{
     fill: #AFB1B8;
 }
-.ikons:hover .command-ikons,
-.ikons:focus .command-ikons{
+.ikons1:hover .command-ikons,
+.ikons1:focus .command-ikons{
     fill: var(--white-color);
 }
-.links .ikons:hover,
-.links .ikons:focus{
+.links .ikons1:hover,
+.links .ikons1:focus{
     background-color: var(--accent-color);    
 }
 .links .ikons:not(:last-child){
@@ -449,18 +449,13 @@ img{
     text-transform: uppercase;
     color: #FFFFFF
 }
-.footer-links .ikons{
+.footer-links .ikons1{
     background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-ikons{
     fill: var(--white-color);
     
 }
-/* .instagram:hover,
-.instagram:focus{
-    background-color: var(--accent-color);
-} */
-
 .container{
     margin-left: auto;
     margin-right: auto;
