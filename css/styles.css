@@ -59,9 +59,11 @@ button{
     display: flex;
     margin-left: auto;
 }
-.site-nav .item:not(:last-child),
-.auth .item:not(:last-child){
+.site-nav .item:not(:last-child){
     margin-right: 50px;
+}
+.auth .item:not(:last-child){
+    margin-right: 30px;
 }
 .site-nav .link{
     display: block;
@@ -84,18 +86,25 @@ button{
 /* auth */
 .auth-mail,
 .auth-tel{
+    display: inline-flex;
+    align-items: center;
     color: var(--primary-text-color);
+    fill: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.retreat{
+    margin-right: 10px;
+} 
 .auth-mail:hover,
 .auth-mail:focus,
 .auth-tel:hover,
 .auth-tel:focus{
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 .page-header{
     margin-left: 0px;
@@ -253,26 +262,13 @@ p{
 .peculiarities .item:not(:last-child){
     margin-right: 30px;
 }
-.peculiarities .item::before{
-    display: block;
-    content: "";
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
+.decor{
+    display: flex;
+    align-items: center;
     background-color: #F5F4FA;
-    margin-bottom: 30px;    
-}
-.peculiarities .item:nth-of-type(1)::before{
-    background-image: url("../images/antenna1.svg");
-}
-.peculiarities .item:nth-of-type(2)::before{
-    background-image: url("../images/clock1.svg");
-}
-.peculiarities .item:nth-of-type(3)::before{
-    background-image: url("../images/diagram1.svg");
-}
-.peculiarities .item:nth-of-type(4)::before{
-    background-image: url("../images/astronaut1.svg");
+    height: 120px;
+    margin-bottom: 30px;
+    justify-content: center;
 }
 .peculiarities .section-title{
     margin-bottom: 10px;
@@ -361,10 +357,12 @@ img{
 .command-ikons{
     fill: #AFB1B8;
 }
-.command-ikons:hover{
+.ikons:hover .command-ikons,
+.ikons:focus .command-ikons{
     fill: var(--white-color);
 }
-.links .ikons:hover{
+.links .ikons:hover,
+.links .ikons:focus{
     background-color: var(--accent-color);    
 }
 .links .ikons:not(:last-child){
@@ -396,8 +394,8 @@ img{
 .button1:focus{
     border: 1px solid var(--accent-color);
 }
-.button-icon:hover,
-.button-icon:focus{
+.button1:hover .button-icon,
+.button1:focus .button-icon{
     fill: var(--accent-color);    
 }
 
@@ -458,10 +456,10 @@ img{
     fill: var(--white-color);
     
 }
-.footer-ikons:hover,
-.footer-ikons:focus{
+/* .instagram:hover,
+.instagram:focus{
     background-color: var(--accent-color);
-}
+} */
 
 .container{
     margin-left: auto;
